@@ -20,11 +20,11 @@ jobs:
           username: CodyCBakerPhD
           key: ${{ secrets.PA_SSH_KEY }}
           script: |
-            cd ~/your-project
+            cd ~/mysite/pozu-backend
             git pull origin main
 
       - name: Reload webapp
         run: |
           curl -X POST \
             -H "Authorization: Token ${{ secrets.PA_API_TOKEN }}" \
-            "https://www.pythonanywhere.com/api/v0/user/CodyCBakerPhD/webapps/pose-zoo-CodyCBakerPhD..pythonanywhere.com/reload/"
+            "https://www.pythonanywhere.com/api/v0/user/CodyCBakerPhD/webapps/pose-zoo-CodyCBakerPhD.pythonanywhere.com/reload/"
