@@ -1,6 +1,6 @@
-# Pose Zoo (Backend)
+# Pozu (Backend)
 
-Backend Flask server for the Pose Zoo web app.
+Backend Flask server for the Pozu web app.
 
 
 ### Setup
