@@ -308,7 +308,7 @@ def create_app() -> flask.Flask:
     )
 
     flask_app = flask.Flask(__name__)
-    flask.CORS(
+    flask_cors.CORS(
         flask_app,
         resources={r"/api/*": {"origins": ["https://codycbakerphd.github.io"]}},
         methods=["GET", "POST", "OPTIONS"],
