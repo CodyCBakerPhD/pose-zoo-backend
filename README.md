@@ -7,7 +7,7 @@ Backend Flask server for the Pose Zoo web app.
 
 Backend is currently deployed using [PythonAnywhere by Anaconda].
 
-Swagger: https://pose-zoo-codycbakerphd.pythonanywhere.com/api/v1/docs
+Swagger: https://pozu-codycbakerphd.pythonanywhere.com/api/v1/docs
 
 The tracked file `pozu-codycbakerphd_pythonanywhere_com_wsgi.py` is placed at `/var/www/pozu-codycbakerphd_pythonanywhere_com_wsgi.py` until a custom domain is set up.
 
