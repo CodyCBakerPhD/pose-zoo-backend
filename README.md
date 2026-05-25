@@ -18,7 +18,7 @@ The virtual environment is configured on the app to read from `/home/CodyCBakerP
 That environment was set up using:
 
 ```
-mkvirtualenv --python=/usr/bin/python3.11 pose-zoo
+mkvirtualenv --python=/usr/bin/python3.11 pozu
 
 pip install --upgrade pip
 pip install flask flask-restx flask-cors requests filelock dandi
