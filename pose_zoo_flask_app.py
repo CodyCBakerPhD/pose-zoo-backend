@@ -85,10 +85,9 @@ class BadRequest(Exception):
     """Raised to return a 400 with a clean JSON body."""
 
 class RedactFilter(logging.Filter):
+    """Redact all secrets from server logs."""
     def __init__(self, secrets):
         super().__init__()
-        # Only redact non-empty secrets, longest first so substrings of
-        # longer secrets get caught.
         self._secrets = sorted([s for s in secrets if s], key=len, reverse=True)
 
     def filter(self, record):
